@@ -1,4 +1,4 @@
-# randomMessages
+# Mixed Message
 This project will print a random message everytime you run it.
 
 **It contains:**
