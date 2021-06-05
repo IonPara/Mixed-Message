@@ -34,9 +34,10 @@ const randomJoke = (array) => {
         break;
         
     };
-    return joke.join('\n')
+    return `Your joke right now is: \n ${joke.join('\n')}`;
 
 };
+
  
 const characterMessage = {
     character: ['Joker','Clown','Harley Quinn','Funny Monkey','Aunt Funny','Donkey from Shrek'],
@@ -51,7 +52,11 @@ for(let i in characterMessage){
       randomMessage.push(`Your character right now is "${characterMessage[i][randomIndex]}"`)
     } else  {
       randomMessage.push(`You will have a  "${characterMessage[i][randomIndex]}"`)
-    }
-}
-console.log(randomMessage)
+    };
+};
 
+const messageAndJoke = () => {
+console.log(randomMessage.join('\n') + \n + randomJoke(answer))
+}
+
+console.log(messageAndJoke());
