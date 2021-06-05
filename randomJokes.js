@@ -56,7 +56,7 @@ for(let i in characterMessage){
 };
 
 const messageAndJoke = () => {
-console.log(randomMessage.join('\n') + \n + randomJoke(answer))
+console.log(randomMessage.join('\n') + '\n' + randomJoke(answer))
 }
 
 console.log(messageAndJoke());
