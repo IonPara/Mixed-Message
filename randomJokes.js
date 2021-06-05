@@ -5,7 +5,7 @@ const randomNumber = (num) => {
 let joke = ["Knock Knock.","Who's there?"];
 
 let answer = ['Tank','Luke','Figs','Annie','Cow says','Woo'];
-// Create a function wich generates a random joke 
+// Create a function which generates a random joke 
 const randomJoke = (array) => {
     let randomAnswer = array[randomNumber(array.length)];
     switch(randomAnswer){
@@ -40,6 +40,18 @@ const randomJoke = (array) => {
  
 const characterMessage = {
     character: ['Joker','Clown','Harley Quinn','Funny Monkey','Aunt Funny','Donkey from Shrek'],
-    sentence:  ['funny day','smiley day','big laugh','a day full of jokes','happy day']
+    sentence:  ['funny day','smiley day','big laugh',' day full of jokes','happy day']
 };
+
+let randomMessage = [];
+
+for(let i in characterMessage){
+  let randomIndex = randomNumber(characterMessage[i].length);
+  if( i === 'character') {
+      randomMessage.push(`Your character right now is "${characterMessage[i][randomIndex]}"`)
+    } else  {
+      randomMessage.push(`You will have a  "${characterMessage[i][randomIndex]}"`)
+    }
+}
+console.log(randomMessage)
 
